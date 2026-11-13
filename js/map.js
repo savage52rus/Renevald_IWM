@@ -6,15 +6,8 @@ let viewCenter = JSON.parse(localStorage.getItem('mapCenter') ?? JSON.stringify(
 
 // Creating the Map
 var map = L.map('map', { crs: L.CRS.Simple }).setView(viewCenter, viewZoom);
-L.tileLayer(`${mapFolder}/result.png`, {
-  continuousWorld: false,
-  noWrap: true,
-  minZoom: lowestZoom,
-  maxZoom: biggestZoom, // Max zoom level, higher than maxNativeZoom, so when we go higher than maxNativeZoom, we just scale up the images on the map (providing a higher zoom)
-  maxNativeZoom: biggestMapFolderZoom, // Maximum zoom level for /map/ folders
-  minNativeZoom: shortestMapFolderZoom, // Minimum zoom level for /map/ folders
-  attribution: 'By <a href="https://github.com/TaylorHo" target="_blank">@TaylorHo</a> | <a href="https://github.com/TaylorHo/rpg-interactive-map" target="_blank">GitHub</a>'
-}).addTo(map);
+var bounds = [[0,0], [5120,3264]];
+var imageUrl = 'map/result.png'
 
 // Boundaries Variables
 if (mapSouthWest && mapNorthEast && mapSouthWest.length > 0 && mapNorthEast.length > 0) {

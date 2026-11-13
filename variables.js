@@ -21,8 +21,8 @@ const lowestZoom = -2; // Lowest possible zoom
 const mapCenter = [2560, 1632]; // Coordinates for the center of the map
 const initialPartyPositionOnMap = [2560, 1632];
 
-const showPartyMarker = false; // Show the party marker, useful to get distances to other markers
-const showLocationFinderMarker = true; // Used to get the lat and long from the map, visualy, so it's easy to add coordinates to the CSV file
+const showPartyMarker = False; // Show the party marker, useful to get distances to other markers
+const showLocationFinderMarker = True; // Used to get the lat and long from the map, visualy, so it's easy to add coordinates to the CSV file
 const travelVelocityRulesLink = "https://roll20.net/compendium/dnd5e/Movement#content";
 
 const mapSouthWest = []; // Leave empty to remove map bounds, or add the value of for your map (use the showLocationFinderMarker if needed)

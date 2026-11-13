@@ -10,24 +10,15 @@ var bounds = [[0,0], [5120,3264]];
 var imageUrl = 'map/result.png';
 L.imageOverlay(imageUrl, bounds).addTo(map);
 map.fitBounds(bounds);
-// Настройки линейки
-var rulerOptions = {
-    position: 'topright', // Положение кнопки на карте
-    lengthUnit: {
-        display: 'ед.',   // Что будет показано на карте после числа
-        decimal: 2,       // Количество знаков после запятой
-        factor: null,     // Оставьте null, так как у нас нет реального пересчёта из километров
-        label: 'Расстояние:' // Подпись перед числом
-    },
-    angleUnit: {
-        display: '°',     // Единица измерения угла (можно оставить)
-        decimal: 2,
-        factor: null
-    }
-};
-
 // Добавляем линейку на карту
-L.control.ruler(rulerOptions).addTo(map);
+// Настройки новой линейки
+L.control.polylineMeasure({
+    position: 'topright', // Положение кнопки
+    unit: 'условных часов',   // Плагин требует указать единицы, но для CRS.Simple это не даст реальных км
+    useSubunits: false,   // Отключаем метры/футы, чтобы не путаться
+    showBearings: false,  // Углы (азимуты) можно отключить, если не нужны
+    clearMeasurementsOnStop: true // Очищать линии при выключении линейки
+}).addTo(map);
 // Boundaries Variables
 if (mapSouthWest && mapNorthEast && mapSouthWest.length > 0 && mapNorthEast.length > 0) {
   map.setMaxBounds(new L.LatLngBounds(mapSouthWest, mapNorthEast));

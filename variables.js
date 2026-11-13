@@ -15,8 +15,8 @@ const nameOfTheMapOrPage = "Renevald's tormented lands"; // Name to be used as t
 
 const biggestMapFolderZoom = 6; // Maximum folder level (eg. /map/6/)
 const shortestMapFolderZoom = 3; // Minimum folder level (eg. /map/1/)
-const biggestZoom = 7; // Maximum zoom level, if higher than biggestMapFolderZoom it will zoom in the image ignoring quality
-const lowestZoom = 3; // Lowest possible zoom
+const biggestZoom = 9; // Maximum zoom level, if higher than biggestMapFolderZoom it will zoom in the image ignoring quality
+const lowestZoom = -2; // Lowest possible zoom
 
 const mapCenter = [2560, 1632]; // Coordinates for the center of the map
 const initialPartyPositionOnMap = [2560, 1632];

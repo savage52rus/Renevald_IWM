@@ -1,26 +1,26 @@
 category,overlayMarkerColor,lat,long,icon,text,description
-Город,green,"1294,0","2136,0",star,Cант-Реневальд,Столица Империи <strong>tags</strong>
-Город,green,"0,0","0,0",building,Грин Хоуп,"Description of the location, accepts commas and <strong>tags</strong>"
-Город,green,"0,0","0,0",building,Шторм Ривер,"Description of the location, accepts commas and <strong>tags</strong>"
-Город,green,"0,0","0,0",building,Кумамото,"Description of the location, accepts commas and <strong>tags</strong>"
-Город,green,"686,0","2472,0",building,Гавань Ветров,"Description of the location, accepts commas and <strong>tags</strong>"
-Крепость,yellow,"1874,0","2478,0",fort-awesome,Швондер,"Description of the location, accepts commas and <strong>tags</strong>"
-Крепость,yellow,"0,0","0,0",fort-awesome,Саппоро,"Description of the location, accepts commas and <strong>tags</strong>"
-Крепость,yellow,"0,0","0,0",fort-awesome,Мисава,"Description of the location, accepts commas and <strong>tags</strong>"
-Крепость,yellow,"0,0","0,0",fort-awesome,Шрамированные земли,"Description of the location, accepts commas and <strong>tags</strong>"
-Крепость,yellow,"0,0","0,0",fort-awesome,Аладен,"Description of the location, accepts commas and <strong>tags</strong>"
-Крепость,yellow,"1926,0","946,0",fort-awesome,Хай Хевен,"Description of the location, accepts commas and <strong>tags</strong>"
-Крепость,yellow,"1878,0","664,0",fort-awesome,Эльф-Шатур,Дворфийская крепость в империи. Оригинальное название Голуг-Дум
-Поселение,darkblue,"0,0","0,0",campground,Фармстоун,"Description of the location, accepts commas and <strong>tags</strong>"
-Поселение,darkblue,"0,0","0,0",campground,Чизфилд,"Description of the location, accepts commas and <strong>tags</strong>"
-Поселение,darkblue,"1172,0","2556,0",campground,Рок Порт,"Description of the location, accepts commas and <strong>tags</strong>"
-Поселение,darkblue,"1586,0","2524,0",campground,Карл Крик,"Description of the location, accepts commas and <strong>tags</strong>"
-Поселение,darkblue,"0,0","0,0",campground,Айрон Шифт,"Description of the location, accepts commas and <strong>tags</strong>"
-Поселение,darkblue,"2086,0","968,0",campground,Лоу Хевен,"Description of the location, accepts commas and <strong>tags</strong>"
-Поселение,darkblue,"786,0","1442,0",campground,Грей Виледж,"Description of the location, accepts commas and <strong>tags</strong>"
-Разрушенный город,red,,,place-of-worship,,
-Разрушенная крепость,red,,,campground,,
-Разрушенная деревня,red,,,fort-awesome,,
-Руины,purple,,,gopuram,,
-Святилище,lightblue,,,tower-observation,,
-Точка интереса,blue,,,diamond,,
+City,green,"1294,0","2136,0",star,Cант-Реневальд,Столица Империи <strong>tags</strong>
+City,green,"0,0","0,0",building,Грин Хоуп,"Description of the location, accepts commas and <strong>tags</strong>"
+City,green,"0,0","0,0",building,Шторм Ривер,"Description of the location, accepts commas and <strong>tags</strong>"
+City,green,"0,0","0,0",building,Кумамото,"Description of the location, accepts commas and <strong>tags</strong>"
+City,green,"686,0","2472,0",building,Гавань Ветров,"Description of the location, accepts commas and <strong>tags</strong>"
+Fortres,yellow,"1874,0","2478,0",fort-awesome,Швондер,"Description of the location, accepts commas and <strong>tags</strong>"
+Fortres,yellow,"0,0","0,0",fort-awesome,Саппоро,"Description of the location, accepts commas and <strong>tags</strong>"
+Fortres,yellow,"0,0","0,0",fort-awesome,Мисава,"Description of the location, accepts commas and <strong>tags</strong>"
+Fortres,yellow,"0,0","0,0",fort-awesome,Шрамированные земли,"Description of the location, accepts commas and <strong>tags</strong>"
+Fortres,yellow,"0,0","0,0",fort-awesome,Аладен,"Description of the location, accepts commas and <strong>tags</strong>"
+Fortres,yellow,"1926,0","946,0",fort-awesome,Хай Хевен,"Description of the location, accepts commas and <strong>tags</strong>"
+Fortres,yellow,"1878,0","664,0",fort-awesome,Эльф-Шатур,Дворфийская крепость в империи. Оригинальное название Голуг-Дум
+Town,darkblue,"0,0","0,0",campground,Фармстоун,"Description of the location, accepts commas and <strong>tags</strong>"
+Town,darkblue,"0,0","0,0",campground,Чизфилд,"Description of the location, accepts commas and <strong>tags</strong>"
+Town,darkblue,"1172,0","2556,0",campground,Рок Порт,"Description of the location, accepts commas and <strong>tags</strong>"
+Town,darkblue,"1586,0","2524,0",campground,Карл Крик,"Description of the location, accepts commas and <strong>tags</strong>"
+Town,darkblue,"0,0","0,0",campground,Айрон Шифт,"Description of the location, accepts commas and <strong>tags</strong>"
+Town,darkblue,"2086,0","968,0",campground,Лоу Хевен,"Description of the location, accepts commas and <strong>tags</strong>"
+Town,darkblue,"786,0","1442,0",campground,Грей Виледж,"Description of the location, accepts commas and <strong>tags</strong>"
+Ruined city,red,"0,0","0,0",place-of-worship,-,"Description of the location, accepts commas and <strong>tags</strong>"
+Ruined fortres,red,"0,0","0,0",campground,-,"Description of the location, accepts commas and <strong>tags</strong>"
+Ruined town,red,"0,0","0,0",fort-awesome,-,"Description of the location, accepts commas and <strong>tags</strong>"
+Ruins,purple,"0,0","0,0",gopuram,-,"Description of the location, accepts commas and <strong>tags</strong>"
+Sanctuary,lightblue,"0,0","0,0",tower-observation,-,"Description of the location, accepts commas and <strong>tags</strong>"
+Point of interest,blue,"0,0","0,0",diamond,-,"Description of the location, accepts commas and <strong>tags</strong>"

@@ -5,7 +5,7 @@ let viewZoom = localStorage.getItem('mapZoom') ?? lowestZoom;
 let viewCenter = JSON.parse(localStorage.getItem('mapCenter') ?? JSON.stringify(mapCenter));
 
 // Creating the Map
-var map = L.map('map', { crs: L.CRS.Simple, minZoom: -7, }).setView(viewCenter, viewZoom);
+var map = L.map('map', { crs: L.CRS.Simple, minZoom: -3, }).setView(viewCenter, viewZoom);
 var bounds = [[0,0], [5120,3264]];
 var imageUrl = 'map/result.png';
 L.imageOverlay(imageUrl, bounds).addTo(map);

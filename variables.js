@@ -23,7 +23,7 @@ const initialPartyPositionOnMap = [2560, 1632];
 
 const showPartyMarker = false; // Show the party marker, useful to get distances to other markers
 const showLocationFinderMarker = true; // Used to get the lat and long from the map, visualy, so it's easy to add coordinates to the CSV file
-const travelVelocityRulesLink = //"https://roll20.net/compendium/dnd5e/Movement#content";
+const travelVelocityRulesLink = "https://roll20.net/compendium/dnd5e/Movement#content";
 
-const mapSouthWest = [,]; // Leave empty to remove map bounds, or add the value of for your map (use the showLocationFinderMarker if needed)
-const mapNorthEast = [,]; // Leave empty to remove map bounds, or add the value of for your map (use the showLocationFinderMarker if needed)
+const mapSouthWest = []; // Leave empty to remove map bounds, or add the value of for your map (use the showLocationFinderMarker if needed)
+const mapNorthEast = []; // Leave empty to remove map bounds, or add the value of for your map (use the showLocationFinderMarker if needed)

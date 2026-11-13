@@ -12,13 +12,24 @@ L.imageOverlay(imageUrl, bounds).addTo(map);
 map.fitBounds(bounds);
 // Добавляем линейку на карту
 // Настройки новой линейки
-L.control.polylineMeasure({
-    position: 'topright', // Положение кнопки
-    unit: 'условных часов',   // Плагин требует указать единицы, но для CRS.Simple это не даст реальных км
-    useSubunits: false,   // Отключаем метры/футы, чтобы не путаться
-    showBearings: false,  // Углы (азимуты) можно отключить, если не нужны
-    clearMeasurementsOnStop: true // Очищать линии при выключении линейки
-}).addTo(map);
+// Настройки линейки leaflet-ruler
+var rulerOptions = {
+    position: 'topleft', // Положение кнопки
+    lengthUnit: {
+        display: 'часов',   // <--- Здесь пишем ваши единицы (лиги, версты, мили)
+        decimal: 2,       // Количество знаков после запятой
+        factor: 10,       // <--- ВАШ КОЭФФИЦИЕНТ. Например, 10 означает, что 1 единица карты = 10 лиг
+        label: 'Время в пути:' // Подпись перед числом
+    },
+    angleUnit: {
+        display: '°',
+        decimal: 2,
+        factor: null
+    }
+};
+
+// Добавляем линейку на карту
+L.control.ruler(rulerOptions).addTo(map);
 // Boundaries Variables
 if (mapSouthWest && mapNorthEast && mapSouthWest.length > 0 && mapNorthEast.length > 0) {
   map.setMaxBounds(new L.LatLngBounds(mapSouthWest, mapNorthEast));

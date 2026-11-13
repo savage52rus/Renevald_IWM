@@ -6,7 +6,7 @@ let viewCenter = JSON.parse(localStorage.getItem('mapCenter') ?? JSON.stringify(
 
 // Creating the Map
 var map = L.map('map', { crs: L.CRS.Simple }).setView(viewCenter, viewZoom);
-L.tileLayer(`${mapFolder}/{z}/{x}/{y}.png`, {
+L.tileLayer(`${mapFolder}/result.png`, {
   continuousWorld: false,
   noWrap: true,
   minZoom: lowestZoom,

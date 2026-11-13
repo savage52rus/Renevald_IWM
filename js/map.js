@@ -8,7 +8,24 @@ let viewCenter = JSON.parse(localStorage.getItem('mapCenter') ?? JSON.stringify(
 var map = L.map('map', { crs: L.CRS.Simple }).setView(viewCenter, viewZoom);
 var bounds = [[0,0], [5120,3264]];
 var imageUrl = 'map/result.png'
+// Настройки линейки
+var rulerOptions = {
+    position: 'topright', // Положение кнопки на карте
+    lengthUnit: {
+        display: 'ед.',   // Что будет показано на карте после числа
+        decimal: 2,       // Количество знаков после запятой
+        factor: null,     // Оставьте null, так как у нас нет реального пересчёта из километров
+        label: 'Расстояние:' // Подпись перед числом
+    },
+    angleUnit: {
+        display: '°',     // Единица измерения угла (можно оставить)
+        decimal: 2,
+        factor: null
+    }
+};
 
+// Добавляем линейку на карту
+L.control.ruler(rulerOptions).addTo(map);
 // Boundaries Variables
 if (mapSouthWest && mapNorthEast && mapSouthWest.length > 0 && mapNorthEast.length > 0) {
   map.setMaxBounds(new L.LatLngBounds(mapSouthWest, mapNorthEast));

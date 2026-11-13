@@ -7,7 +7,9 @@ let viewCenter = JSON.parse(localStorage.getItem('mapCenter') ?? JSON.stringify(
 // Creating the Map
 var map = L.map('map', { crs: L.CRS.Simple }).setView(viewCenter, viewZoom);
 var bounds = [[0,0], [5120,3264]];
-var imageUrl = 'map/result.png'
+var imageUrl = 'map/result.png';
+L.imageOverlay(imageUrl, bounds).addTo(map);
+map.fitBounds(bounds);
 // Настройки линейки
 var rulerOptions = {
     position: 'topright', // Положение кнопки на карте
